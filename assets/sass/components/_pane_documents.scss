@@ -1,0 +1,40 @@
+/*******************************************************************************
+* _pane_documents.scss
+******************************************************************************/
+
+.pane-documents-panel-pane-1 {
+  background: $white;
+  padding-top: 8px;
+  margin-bottom: 0 !important; 
+
+  .pane-title {
+    @include sidebar-heading()
+  }
+
+  .pane-content .views-row {
+    padding-left: 18px;
+    border-top: 1px solid $grayLighter;
+    border-bottom: 1px solid $grayLighter;
+
+    &.views-row-first {
+      border-top: 0;
+      padding-top: 2px;
+    }
+
+    &.views-row-last {
+      border-bottom: 0;
+      padding-bottom: 2px;
+    }
+
+    .views-field-filename {
+      padding: 5px 0 14px;
+
+      a:after {
+        font-family: 'FontAwesome';
+        content: "\f019";
+        color: $red;
+        margin-left: 5px;
+      }
+    }
+  }
+}

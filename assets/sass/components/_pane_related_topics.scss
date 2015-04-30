@@ -1,0 +1,37 @@
+/*******************************************************************************
+* _pane_related_topics.scss
+******************************************************************************/
+
+.pane-related-topic-pages-panel-pane-1 {
+  background: $white;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  margin-bottom: 60px;
+
+  .pane-title {
+    @include sidebar-heading();
+  }
+
+  .pane-content {
+    padding: 0 27px 23px 23px;
+  }
+
+  .row .col-md-4 {
+    border-top: 0;
+    @media all and (max-width: $MobileMax) {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    > h4 {
+      margin: 28px 0 21px 0;
+      font-weight: bold;
+    }
+
+    > a {
+      display: table;
+      float: left;
+      margin-right: 15px;
+    }
+  }
+}

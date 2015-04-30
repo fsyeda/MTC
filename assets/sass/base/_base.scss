@@ -1,0 +1,51 @@
+/*******************************************************************************
+ * _base.scss
+ *
+ * Partial: Contains base styles for HTML elements only.
+ ******************************************************************************/
+
+html {
+  font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 { 
+}
+
+h4 { 
+}
+
+h5 { 
+}
+
+h6 { 
+}
+
+ul {
+}
+li {
+}
+
+p {
+}
+
+img, media {
+  max-width: 100%;
+}
+
+a {
+  color: $grayDark;
+}
+a:hover {
+}

@@ -1,0 +1,27 @@
+/*******************************************************************************
+* _serch_form.scss
+******************************************************************************/
+
+.search-form {
+  @media all and (max-width: $MobileMax) {
+    margin: 0;
+  }
+
+  @media all and (min-width: $MobileMax + 1) {
+    margin-top: -135px;
+    z-index: 10;
+  }
+
+  .form-control {
+    min-width: 320px;
+  }
+
+  #edit-basic:after {
+    font-family: 'FontAwesome';
+    content: "\f002";
+    text-align: right;
+    display: block;
+    margin: -28px 10px 0 0;
+    color: $grayDarker;
+  }
+}

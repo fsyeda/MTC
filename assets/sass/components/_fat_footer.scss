@@ -1,0 +1,121 @@
+/*******************************************************************************
+* _fat_footer.scss
+******************************************************************************/
+
+#mini-panel-fat_footer {
+  .pane-title {
+    font-weight: bold;
+  }
+
+  .footer-top {
+    background: #336699;
+    color: #ffffff;
+    padding: 10px 0;
+
+    .radix-layouts-column1 {
+      color: $white;
+      line-height: 20px;
+      margin: 9px 0;
+
+      p {
+        line-height: 17px;
+        margin: 0;
+      }
+    }
+
+    .radix-layouts-content {
+      text-align: center;
+    }
+  }
+
+
+  .footer-bottom {
+    padding: 40px 0 60px 0;
+      .row-top {
+        padding-left:5px;
+        border-bottom: 2px solid $grayLight;
+        .panel-panel-inner {
+          display: table;
+          width: 100%;
+          padding-bottom: 40px;
+
+          .pane-title {
+            font-weight: bold;
+            padding-bottom: 3px;
+          }
+
+          .nav > li {
+
+            &.active > a {
+              color: inherit;
+              background: transparent;
+            }
+
+            > a {
+              padding: 0;
+              
+              &:hover, &:focus {
+                background: transparent;
+              }
+            }
+          }
+        }
+      }
+
+.row-middle {
+    .pane-title {
+      font-weight: bold;
+    }
+
+    .radix-layouts-half {
+      .pane-title {
+        background: url("../images/cmt.png")  0 0 no-repeat;
+        padding: 7px 0 7px 40px;
+        margin-top: 36px;
+      }
+
+      .pane-content {
+        font-style: italic;
+        font-size: large;
+        line-height: 27px;
+
+        @media all and (min-width: $MobileMax + 1) {
+          max-width: 500px;
+        }
+      }
+    }
+
+    .radix-layouts-quarter1, .radix-layouts-quarter2 {
+      margin-top: 33px;
+    }
+
+    .on-the-web > a {
+      font-size: 0;
+      color: $grayEasyLight;
+
+      &:before {
+        font-size: 25px;
+        margin-right: 10px;
+      }
+
+      &:hover {
+        text-decoration: inherit;
+        color: $gray;
+      }
+    }
+  }
+  
+}
+  .row-bottom{
+    .radix-layouts-footer {
+      margin-top: 15px;
+
+      .pane-custom {
+        display: table;
+        border-top: 2px solid $grayLight;
+        padding-top: 10px;
+        font-size: small;
+      }
+    }
+  }
+}

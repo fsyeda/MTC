@@ -1,0 +1,32 @@
+/*******************************************************************************
+ * _style.scss
+ *
+ * Partial: Contains styles for page.tpl.php, will affect every page on the site.
+ ******************************************************************************/
+
+#main-inner {
+  background: $mainBackground;
+  padding-bottom: 113px;
+
+  #page-header {
+    color: $white;
+    margin-bottom: 38px;
+    /* See components/_page_header.scss for section-based bg colors */
+
+    .page-header {
+      border: none;
+      margin: 0;
+      padding: 34px 0 36px;
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+#footer {
+  background: $grayLighter;
+  margin: 0;
+  padding-bottom: 36px;
+}

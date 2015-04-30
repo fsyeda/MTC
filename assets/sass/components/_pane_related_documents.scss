@@ -1,0 +1,26 @@
+/*******************************************************************************
+* _pane_related_documents.scss
+******************************************************************************/
+
+#views-exposed-form-digital-libarary-panel-pane-1 {
+  background: $grayLighter;
+    .views-exposed-widget {
+      padding: 15px 14px 23px 14px;
+      .form-item-field-file-image-title-text-value:after {
+        font-family: 'FontAwesome';
+        content: "\f002";
+        text-align: right;
+        display: block;
+        margin: -28px 10px 0 0;
+        text-align: right;
+        color: $red;    
+      }
+      input {
+        border-radius: 0;
+      }
+    }
+    .views-submit-button{
+      display: none;
+    }
+}
+

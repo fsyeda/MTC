@@ -1,0 +1,27 @@
+/*******************************************************************************
+* _node.scss
+******************************************************************************/
+
+article.node-page {
+  background: $white;
+
+  @media all and (min-width: $TabletMax) {
+   /* margin-left: 23px;
+    padding: 25px 70px 0 40px;*/
+  }
+  .field-name-field-subtitle {
+    font-size:32px;
+    margin:0 0 31px 0;
+  }
+  .field-name-field-image {
+  /*  margin: 35px -40px 23px -40px;*/
+
+    img {
+      width: 100%;
+    }
+  }
+  .field-name-body {
+    padding-bottom:73px;
+    margin-bottom: 8px;
+  }
+}

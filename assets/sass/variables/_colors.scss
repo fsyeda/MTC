@@ -1,0 +1,56 @@
+/*******************************************************************************
+ * _colors.scss
+ *
+ * Variables: Contains variables relating to colors.
+ ******************************************************************************/
+
+// Grays
+// -------------------------
+$black:                 #000 !default;
+$grayDarker:            #646464;
+$grayDark:              #323232;
+$gray:                  #555 !default;
+$grayEasyLight:         #888888;
+$grayLight:             #c8c8c8;
+$grayLighter:           #e6e6e6;
+$grayWashy:             #f0f0f0;
+$white:                 #fff !default;
+
+
+// Accent colors
+// -------------------------
+$blueDark:              #0064cd;
+$red:                   #de3200;
+$yellow:                #ffc40d;
+
+$pink:                  #c3325f !default;
+$purple:                #7a43b6 !default;
+$gold:                  #fbac18;
+
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        $white !default;
+$textColor:             $grayDark !default;
+$mainBackground:        #f5f5f5;
+
+
+// Links
+// -------------------------
+$linkColor:             $red !default;
+$linkColorHover:        darken($linkColor, 15%) !default;
+
+// Basic palette
+// -------------------------
+$green:                 #5ea037;
+$orange:                #f37720;
+$midnightBlue:          #00738c;
+$purple:                #97519f;
+$blue:                  #009edd;
+
+// Hover
+$greenHover:            #5ea037;
+$orangeHover:           $red;
+$midnightBlueHover:     #00738c;
+$purpleHover:           #472580;
+$blueHover:             #254B91;

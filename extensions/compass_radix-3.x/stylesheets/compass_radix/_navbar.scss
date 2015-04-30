@@ -1,0 +1,36 @@
+// Drupal Navbar
+// --------------------------------------------------
+.drupal-navbar .navbar-bar,
+.drupal-navbar .navbar-tray-vertical > .navbar-lining:before,
+.drupal-navbar .navbar-tray-horizontal {
+  @include box-shadow(none);
+}
+.drupal-navbar .navbar-tray-vertical,
+.drupal-navbar .navbar-tray-vertical > .navbar-lining:before {
+  bottom: 0;
+  width: 240px !important;
+}
+@media only screen and (min-width: 38.125em) {
+  body.navbar-tray-open.navbar-vertical {
+    margin-left: 240px !important;
+  }
+}
+
+// Navbar Styling for Panopoly.
+// --------------------------------------------------
+a#navbar-link-admin-panopoly {
+  &:before {
+    background-image: url("../images/icon/icon-panopoly.png");
+  }
+  &.active:before {
+    background-image: url("../images/icon/icon-panopoly-active.png");
+  }
+}
+a#navbar-link-admin-apps {
+  &:before {
+    background-image: url("../images/icon/icon-apps.png");
+  }
+  &.active:before {
+    background-image: url("../images/icon/icon-apps-active.png");
+  }
+}

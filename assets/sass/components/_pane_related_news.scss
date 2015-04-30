@@ -1,0 +1,46 @@
+/*******************************************************************************
+* _pane_related_news.scss
+******************************************************************************/
+
+.pane-related-news-panel-pane-1 {
+  background: $white;
+  padding-top: 8px;
+  margin-bottom: 0 !important; 
+
+  .pane-title {
+    @include sidebar-heading();
+  }
+
+  .views-row {
+    padding-left: 18px;
+    border-top: 1px solid $grayLighter;
+    border-bottom: 1px solid $grayLighter;
+
+    &.views-row-first {
+      border-top: 0;
+    }
+
+    .views-field-title {
+      padding: 7px 20px 7px 0;
+      font-weight: bold;
+    }
+
+  }
+
+  .view-footer {
+    margin-top: 10px;
+    padding-bottom: 3px;
+
+    a {
+      color: $red;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 10px;
+      padding-left: 18px;
+
+      &:hover {
+          text-decoration: inherit;
+      }
+    }
+  }
+}

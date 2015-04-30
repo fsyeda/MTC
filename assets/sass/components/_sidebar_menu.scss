@@ -1,0 +1,97 @@
+/*******************************************************************************
+* _sidebar_menu.scss
+******************************************************************************/
+
+.radix-layouts-sidebar .pane-main-menu {
+  background: $grayLighter;
+
+  ul.nav > li {
+    margin-top: 0;
+    border-top: 1px solid $mainBackground;
+    border-bottom: 1px solid $mainBackground;
+
+    &.first {
+      border-top: 0;
+    }
+
+    &.last {
+      border-bottom: 0;
+    }
+
+    &.active > a,
+    &:hover,
+    &:hover > a,
+    &:focus {
+      background: $grayLight;
+    }
+
+    &.open:hover,
+    .open:hover > a,
+    &.open:focus,
+    &.open.active,
+    &.open.active > a,
+    &.open > a {
+      background: $grayLighter!important;
+      &:after {
+        content: "\f106";
+      }
+    }
+
+    &.open > a {
+      border-bottom: 1px solid $grayLight;
+    }
+
+    &.open:hover {
+      border-color: $mainBackground;
+      &:after {
+        content: "";
+      }
+    }
+
+    > a {
+      border-radius: 0;
+      color: $grayDark;
+      padding-left: 21px;
+
+      &:after {
+        font: 18px/5px 'FontAwesome';
+        content: "\f107";
+        color: $red;
+        float: right;
+        margin-top: 8px;
+      }
+    }
+
+    ul.dropdown-menu {
+      position: initial;
+      box-shadow: none;
+      border-radius: 0;
+      border: 0;
+      float: none;
+      padding-left: 20px;
+      background: $grayLighter;
+
+      > li {
+        &:before {
+          font: 5px 'FontAwesome';
+          content: "\f04d";
+        }
+
+        &:hover {
+          color: $red;
+        }
+
+        > a {
+          white-space: normal;
+          padding-left: 0;
+          margin: -20px 0 0 16px;
+
+          &:hover {
+            background: transparent;
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+}

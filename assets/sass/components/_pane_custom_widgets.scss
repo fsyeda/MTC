@@ -1,0 +1,40 @@
+/*******************************************************************************
+* _pane_custom_widgets.scss
+******************************************************************************/
+
+.pane-custom-widgets-panel-pane-1 {
+  background: $grayLighter;
+  padding-bottom: 22px;
+  font-weight: bold;
+
+  .field {
+    padding: 0 20px;
+
+    &.field-type-image {
+      @media all and (min-width: $TabletMax) {
+        padding: 0;
+      }
+    }
+  }
+
+  .field-name-field-widget-heading {
+    margin: 19px 0 10px;
+    font-size: 24px;
+      font-weight: bold;
+  }
+
+  .field-name-field-widget-link {
+    margin-top: 25px;
+
+    a {
+      color: $red;
+      text-transform: uppercase;
+      font-weight: bold;
+        font-size: 10px;
+
+        &:hover {
+          text-decoration: inherit;
+        }
+    }
+  }
+}

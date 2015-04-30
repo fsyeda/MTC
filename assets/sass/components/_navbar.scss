@@ -1,0 +1,227 @@
+/*******************************************************************************
+* _navbar.scss
+******************************************************************************/
+
+$navIconbackgroundOption: 100% 10px no-repeat;
+
+.navbar-default {
+  border: 0;
+  background-color: transparent;
+  margin-bottom: 0;
+
+  .navbar-header {
+    height: 129px;
+
+    .navbar-brand {
+      display: table;
+      padding: 40px 0 0 0;
+    }
+  }
+
+  #navbar-collapse {
+    width: 100%;
+    padding: 0;
+    @media all and (max-width: $MobileMax) {
+      background-color: #f8f8f8;
+    }
+
+    > #main-menu {
+      width: 100%;
+
+      @media all and (max-width: $MobileMax) {
+        margin: 0;
+      }
+
+      > li {
+        padding-bottom: 2px;
+        padding-right: 10px;
+
+        @media all and (min-width: $MobileMax + 1) {
+          width: 20%;
+        }
+
+        @media all and (max-width: $MobileMax) {
+          padding: 25px 0 25px 15px !important;
+
+          &.first {
+            padding-top: 10px!important;
+          }
+        }
+
+        @media (min-width: $MobileMax) and (max-width: $DesctopMin) {
+          height: 65px;
+          padding-right: 5px;
+        }
+        
+        > a {
+          color: $white;
+          text-transform: uppercase;
+          font-weight: bold;
+          padding-top: 7px;
+          padding-left: 12px;
+          display: table;
+          float: left;
+          width: 100%;
+          padding-right: 25px;
+
+          @media all and (max-width: $MobileMax) {
+            color: $grayDarker;
+            background-position: 0 5px!important;
+            padding-left: 30px;
+          }
+
+          .caret {
+            display: none;
+            margin-top: 17px;
+            border-top: 8px dashed;
+            border-right: 9px solid transparent;
+            border-left: 9px solid transparent;
+            position: absolute;
+            left: 50%;
+
+            @media (min-width: $MobileMax + 1) and (max-width: $DesctopMin - 1) {
+              position: absolute;
+              top: 48px;
+            }
+
+            @media all and (min-width: $DesctopMin) {
+              margin-top: 17px;
+            }
+          }
+        }
+      }
+
+      li.active-trail .caret, li.active .caret, li:hover .caret {
+        @media all and (min-width: $MobileMax + 1) {
+          display: table;
+        }
+      }
+
+      .menu-link-getting-around {
+        @media all and (min-width: $MobileMax + 1) {
+          background-color: $green;
+
+          &:hover {
+            background-color: $greenHover;
+
+            .caret {
+              color: $greenHover;
+            }
+          }
+
+          .caret {
+            color: $green;
+          }
+
+          &.active-trail:after, &.active:after {
+            color: $green;
+          }
+        }
+
+        > a {
+          background: url("../images/nav-around.png") $navIconbackgroundOption;
+        }
+      }
+
+      .menu-link-whats-happening {
+        @media all and (min-width: $MobileMax + 1) {
+          background-color: $orange;
+
+          &:hover {
+            background-color: $orangeHover;
+            .caret {
+              color: $orangeHover;
+            }
+          }
+
+          .caret {
+            color: $orange;
+          }
+
+          &.active-trail:after, &.active:after {
+            color: $orange;
+          }
+        }
+
+        > a {
+          background: url("../images/nav-happen.png") $navIconbackgroundOption;
+        }
+        
+      }
+
+      .menu-link-tools--resources {
+        @media all and (min-width: $MobileMax + 1) {
+          background-color: $midnightBlue;
+
+          &:hover {
+            background-color: $midnightBlueHover;
+
+            .caret {
+              color: $midnightBlueHover;
+            }
+          }
+
+          .caret {
+            color: $midnightBlue;
+          }
+
+          &.active-trail:after, &.active:after {
+            color: $midnightBlue;
+          }
+        }
+
+        > a {
+          background: url("../images/nav-tools.png") $navIconbackgroundOption;
+        }
+      }
+
+      .menu-link-our-work {
+        @media all and (min-width: $MobileMax + 1) {
+          background-color: $purple;
+
+          &:hover {
+            background-color: $purpleHover; 
+
+            .caret {
+              color: $purpleHover;
+            }
+          }
+
+          .caret {
+            color: $purple;
+          }
+
+          &.active-trail:after, &.active:after {
+            color: $purple;
+          }
+        }
+
+        > a {
+          background: url("../images/nav-work.png") $navIconbackgroundOption;
+        }
+      }
+
+      .menu-link-about-mtc {
+        @media all and (min-width: $MobileMax + 1) {
+          background-color: $blue;
+
+          &:hover {
+            background-color: $blueHover;
+
+            .caret {
+              color: $blueHover;
+            }
+          }
+          
+          .caret {
+            color: $blue;
+          }
+        }
+
+        > a {
+          background: url("../images/nav-about.png") $navIconbackgroundOption;
+        }
+      }
+    }
+  }
+}

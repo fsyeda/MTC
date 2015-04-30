@@ -1,0 +1,18 @@
+/*******************************************************************************
+* _on_the_web.scss
+******************************************************************************/
+
+.on-the-web > a {
+  font-size: 0;
+  color: $grayEasyLight;
+
+  &:before {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    text-decoration: inherit;
+    color: $gray;
+  }
+}

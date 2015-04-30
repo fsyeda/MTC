@@ -1,0 +1,4 @@
+// For backwards compatibility with older versions of Radix that used 'font'
+// rather than 'typography' we just import 'typography'.
+
+@import "compass_radix/typography";
